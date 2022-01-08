@@ -1,0 +1,1152 @@
+{
+    "intents": [
+        {
+            "tag": "minecraft",
+            "patterns": [
+                "minecraft",
+                "mcpe",
+                "minecraft game",
+                "mojang minecraft"
+            ],
+            "responses": [
+                "minecraft"
+            ]
+        },
+        {
+            "tag": "covid19_summary",
+            "patterns": [
+                "covid19",
+                "covid19",
+                "covid19 pandemy",
+                "coronavirus",
+                "coronavirus pandemy"
+            ],
+            "responses": [
+                "covid19"
+            ]
+        },
+        {
+            "tag": "hackathon",
+            "patterns": [
+                "hackathon",
+                "hackathon league",
+                "hackathon devpost",
+                "hackathon competition"
+            ],
+            "responses": [
+                "hackathon"
+            ]
+        },
+        {
+            "tag": "valorant",
+            "patterns": [
+                "valorant",
+                "valorant game",
+                "valorant vanguard",
+                "riot valorant"
+            ],
+            "responses": [
+                "valorant"
+            ]
+        },
+        {
+            "tag": "cancer",
+            "patterns": [
+                "cancer",
+                "cancer disease",
+                "cancer treatment",
+                "cancer causes",
+                "cancer symptoms"
+            ],
+            "responses": [
+                "cancer"
+            ]
+        },
+        {
+            "tag": "heart cancer",
+            "patterns": [
+                "heart cancer",
+                "heart cancer disease",
+                "heart cancer treatment",
+                "heart cancer causes",
+                "heart cancer symptoms"
+            ],
+            "responses": [
+                "heart cancer"
+            ]
+        },
+        {
+            "tag": "brain cancer",
+            "patterns": [
+                "brain cancer",
+                "brain cancer disease",
+                "brain cancer treatment",
+                "brain cancer causes",
+                "brain cancer symptoms"
+            ],
+            "responses": [
+                "brain cancer"
+            ]
+        },
+        {
+            "tag": "stomach cancer",
+            "patterns": [
+                "stomach cancer",
+                "stomach cancer disease",
+                "stomach cancer treatment",
+                "stomach cancer causes",
+                "stomach cancer symptoms"
+            ],
+            "responses": [
+                "stomach cancer"
+            ]
+        },
+        {
+            "tag": "breast cancer",
+            "patterns": [
+                "breast cancer",
+                "breast cancer disease",
+                "breast cancer treatment",
+                "breast cancer causes",
+                "breast cancer symptoms"
+            ],
+            "responses": [
+                "breast cancer"
+            ]
+        },
+        {
+            "tag": "stomach cancer",
+            "patterns": [
+                "stomach cancer",
+                "stomach cancer disease",
+                "stomach cancer treatment",
+                "stomach cancer causes",
+                "stomach cancer symptoms"
+            ],
+            "responses": [
+                "stomach cancer"
+            ]
+        },
+        {
+            "tag": "liver cancer",
+            "patterns": [
+                "liver cancer",
+                "liver cancer disease",
+                "liver cancer treatment",
+                "liver cancer causes",
+                "liver cancer symptoms"
+            ],
+            "responses": [
+                "liver cancer"
+            ]
+        },
+        {
+            "tag": "lung cancer",
+            "patterns": [
+                "lung cancer",
+                "lung cancer disease",
+                "lung cancer treatment",
+                "lung cancer causes",
+                "lung cancer symptoms"
+            ],
+            "responses": [
+                "lung cancer"
+            ]
+        },
+        {
+            "tag": "kidney cancer",
+            "patterns": [
+                "kidney cancer",
+                "kidney cancer disease",
+                "kidney cancer treatment",
+                "kidney cancer causes",
+                "kidney cancer symptoms"
+            ],
+            "responses": [
+                "kidney cancer"
+            ]
+        },
+        {
+            "tag": "sleeping",
+            "patterns": [
+                "sleeping good",
+                "sleeping bad",
+                "sleeping late",
+                "sleeping early",
+                "sleeping"
+            ],
+            "responses": [
+                "sleeping"
+            ]
+        },
+        {
+            "tag": "sleep apnea",
+            "patterns": [
+                "sleep apnea",
+                "sleep apnea disease",
+                "sleep apnea treatment",
+                "sleep apnea causes",
+                "sleep apnea symptoms"
+            ],
+            "responses": [
+                "sleep apnea"
+            ]
+        },
+        {
+            "tag": "insomnia",
+            "patterns": [
+                "insomnia",
+                "insomnia disease",
+                "insomnia treatment",
+                "insomnia causes",
+                "insomnia symptoms"
+            ],
+            "responses": [
+                "insomnia"
+            ]
+        },
+        {
+            "tag": "narcolepsy",
+            "patterns": [
+                "narcolepsy",
+                "narcolepsy disease",
+                "narcolepsy treatment",
+                "narcolepsy causes",
+                "narcolepsy symptoms"
+            ],
+            "responses": [
+                "narcolepsy"
+            ]
+        },
+        {
+            "tag": "restless legs syndrome",
+            "patterns": [
+                "restless legs syndrome",
+                "restless legs syndrome disease",
+                "restless legs syndrome treatment",
+                "restless legs syndrome causes",
+                "restless legs syndrome symptoms"
+            ],
+            "responses": [
+                "restless legs syndrome"
+            ]
+        },
+        {
+            "tag": "excessive daytime sleepiness",
+            "patterns": [
+                "excessive daytime sleepiness",
+                "excessive daytime sleepiness disease",
+                "excessive daytime sleepiness treatment",
+                "excessive daytime sleepiness causes",
+                "excessive daytime sleepiness symptoms"
+            ],
+            "responses": [
+                "excessive daytime sleepiness"
+            ]
+        },
+        {
+            "tag": "shift work disorder",
+            "patterns": [
+                "shift work disorder",
+                "shift work disorder disease",
+                "shift work disorder treatment",
+                "shift work disorder causes",
+                "shift work disorder symptoms"
+            ],
+            "responses": [
+                "shift work disorder"
+            ]
+        },
+        {
+            "tag": "parasomnia",
+            "patterns": [
+                "parasomnia",
+                "parasomnia disease",
+                "parasomnia treatment",
+                "parasomnia causes",
+                "parasomnia symptoms"
+            ],
+            "responses": [
+                "parasomnia"
+            ]
+        },
+        {
+            "tag": "earthquake",
+            "patterns": [
+                "earthquake",
+                "recent earthquake",
+                "earthquake disaster",
+                "earthquake natural disaster"
+            ],
+            "responses": [
+                "earthquake"
+            ]
+        },
+        {
+            "tag": "tsunami",
+            "patterns": [
+                "tsunami",
+                "tsunami disaster",
+                "tsunami natural disaster",
+                "recent tsunami"
+            ],
+            "responses": [
+                "tsunami"
+            ]
+        },
+        {
+            "tag": "volcano",
+            "patterns": [
+                "volcano",
+                "volcano disaster",
+                "volcano natural disaster",
+                "volcano eruption"
+            ],
+            "responses": [
+                "volcano"
+            ]
+        },
+        {
+            "tag": "world war 2",
+            "patterns": [
+                "world war 2",
+                "world war 2 famous people",
+                "world war 2 conflict",
+                "world war 2 casualties"
+            ],
+            "responses": [
+                "world war 2"
+            ]
+        },
+        {
+            "tag": "world war 1",
+            "patterns": [
+                "world war 1",
+                "world war 1 famous people",
+                "world war 1 conflict",
+                "world war 1 casualties"
+            ],
+            "responses": [
+                "world war 1"
+            ]
+        },
+        {
+            "tag": "revolutions",
+            "patterns": [
+                "revolutions",
+                "revolution wars",
+                "revolution conflicts",
+                "revolution casualties"
+            ],
+            "responses": [
+                "revolutions"
+            ]
+        },
+        {
+            "tag": "dog",
+            "patterns": [
+                "dog",
+                "dog animal",
+                "dog breed",
+                "dog cute"
+            ],
+            "responses": [
+                "dog"
+            ]
+        },
+        {
+            "tag": "cat",
+            "patterns": [
+                "cat",
+                "cat animal",
+                "cat breed",
+                "cat cute"
+            ],
+            "responses": [
+                "cat"
+            ]
+        },
+        {
+            "tag": "rat",
+            "patterns": [
+                "rat",
+                "rat animal",
+                "rat breed",
+                "rat cute"
+            ],
+            "responses": [
+                "rat"
+            ]
+        },
+        {
+            "tag": "mouse",
+            "patterns": [
+                "mouse",
+                "mouse animal",
+                "mouse breed",
+                "mouse cute"
+            ],
+            "responses": [
+                "mouse"
+            ]
+        },
+        {
+            "tag": "github",
+            "patterns": [
+                "github software",
+                "github",
+                "github website",
+                "github jobs"
+            ],
+            "responses": [
+                "github"
+            ]
+        },
+        {
+            "tag": "twilio",
+            "patterns": [
+                "twilio",
+                "twilio website",
+                "twilio software",
+                "twilio products"
+            ],
+            "responses": [
+                "twilio"
+            ]
+        },
+        {
+            "tag": "adobe creative cloud",
+            "patterns": [
+                "adobe creative cloud",
+                "adobe creative cloud software",
+                "adobe creative cloud website",
+                "adobe creative cloud products"
+            ],
+            "responses": [
+                "adobe creative cloud"
+            ]
+        },
+        {
+            "tag": "google cloud",
+            "patterns": [
+                "google cloud",
+                "google cloud software",
+                "google cloud website",
+                "google cloud products"
+            ],
+            "responses": [
+                "google cloud"
+            ]
+        },
+        {
+            "tag": "microsoft office",
+            "patterns": [
+                "microsoft office",
+                "microsoft office software",
+                "microsoft office website",
+                "microsoft office products"
+            ],
+            "responses": [
+                "microsoft office"
+            ]
+        },
+        {
+            "tag": "microsoft excel",
+            "patterns": [
+                "microsoft excel",
+                "microsoft excel software",
+                "microsoft excel website",
+                "microsoft excel products"
+            ],
+            "responses": [
+                "microsoft excel"
+            ]
+        },
+        {
+            "tag": "microsoft word",
+            "patterns": [
+                "microsoft word",
+                "microsoft word software",
+                "microsoft word website",
+                "microsoft word products"
+            ],
+            "responses": [
+                "microsoft word"
+            ]
+        },
+        {
+            "tag": "microsoft powerpoint",
+            "patterns": [
+                "microsoft powerpoint",
+                "microsoft powerpoint software",
+                "microsoft powerpoint website",
+                "microsoft powerpoint products"
+            ],
+            "responses": [
+                "microsoft powerpoint"
+            ]
+        },
+        {
+            "tag": "microsoft outlook",
+            "patterns": [
+                "microsoft outlook",
+                "microsoft outlook software",
+                "microsoft outlook website",
+                "microsoft outlook products"
+            ],
+            "responses": [
+                "microsoft outlook"
+            ]
+        },
+        {
+            "tag": "microsoft onenote",
+            "patterns": [
+                "microsoft onenote",
+                "microsoft onenote software",
+                "microsoft onenote website",
+                "microsoft onenote products"
+            ],
+            "responses": [
+                "microsoft onenote"
+            ]
+        },
+        {
+            "tag": "microsoft access",
+            "patterns": [
+                "microsoft access",
+                "microsoft access software",
+                "microsoft access website",
+                "microsoft access products"
+            ],
+            "responses": [
+                "microsoft access"
+            ]
+        },
+        {
+            "tag": "adobe xd",
+            "patterns": [
+                "adobe xd",
+                "adobe xd software",
+                "adobe xd framework",
+                "adobe xd projects"
+            ],
+            "responses": [
+                "adobe xd"
+            ]
+        },
+        {
+            "tag": "arduino",
+            "patterns": [
+                "arduino",
+                "arduino software",
+                "arduino website",
+                "arduino projects"
+            ],
+            "responses": [
+                "arduino"
+            ]
+        },
+        {
+            "tag": "python",
+            "patterns": [
+                "python",
+                "python coding",
+                "python language",
+                "python projects"
+            ],
+            "responses": [
+                "python"
+            ]
+        },
+        {
+            "tag": "javascript",
+            "patterns": [
+                "javascript",
+                "javascript coding",
+                "javascript language",
+                "javascript projects"
+            ],
+            "responses": [
+                "javascript"
+            ]
+        },
+        {
+            "tag": "html",
+            "patterns": [
+                "html",
+                "html coding",
+                "html language",
+                "html projects"
+            ],
+            "responses": [
+                "html"
+            ]
+        },
+        {
+            "tag": "css",
+            "patterns": [
+                "css",
+                "css coding",
+                "css language",
+                "css projects"
+            ],
+            "responses": [
+                "css"
+            ]
+        },
+        {
+            "tag": "c++",
+            "patterns": [
+                "c++",
+                "c++ coding",
+                "c++ language",
+                "c++ projects"
+            ],
+            "responses": [
+                "c++"
+            ]
+        },
+        {
+            "tag": "c#",
+            "patterns": [
+                "c#",
+                "c# coding",
+                "c# language",
+                "c# projects"
+            ],
+            "responses": [
+                "c#"
+            ]
+        },
+        {
+            "tag": "c",
+            "patterns": [
+                "c",
+                "c coding",
+                "c language",
+                "c projects"
+            ],
+            "responses": [
+                "c"
+            ]
+        },
+        {
+            "tag": "java",
+            "patterns": [
+                "java",
+                "java coding",
+                "java language",
+                "java projects"
+            ],
+            "responses": [
+                "java"
+            ]
+        },
+        {
+            "tag": "php",
+            "patterns": [
+                "php",
+                "php coding",
+                "php language",
+                "php projects"
+            ],
+            "responses": [
+                "php"
+            ]
+        },
+        {
+            "tag": "ruby",
+            "patterns": [
+                "ruby",
+                "ruby coding",
+                "ruby language",
+                "ruby projects"
+            ],
+            "responses": [
+                "ruby"
+            ]
+        },
+        {
+            "tag": "swift",
+            "patterns": [
+                "swift",
+                "swift coding",
+                "swift language",
+                "swift projects"
+            ],
+            "responses": [
+                "swift"
+            ]
+        },
+        {
+            "tag": "kotlin",
+            "patterns": [
+                "kotlin",
+                "kotlin coding",
+                "kotlin language",
+                "kotlin projects"
+            ],
+            "responses": [
+                "kotlin"
+            ]
+        },
+        {
+            "tag": "objective c",
+            "patterns": [
+                "objective c",
+                "objective c coding",
+                "objective c language",
+                "objective c projects"
+            ],
+            "responses": [
+                "objective c"
+            ]
+        },
+        {
+            "tag": "flask",
+            "patterns": [
+                "flask",
+                "flask webdev",
+                "flask library",
+                "flask projects"
+            ],
+            "responses": [
+                "flask"
+            ]
+        },
+        {
+            "tag": "django",
+            "patterns": [
+                "django",
+                "django webdev",
+                "django library",
+                "django projects"
+            ],
+            "responses": [
+                "django"
+            ]
+        },
+        {
+            "tag": "laravel",
+            "patterns": [
+                "laravel",
+                "laravel webdev",
+                "laravel library",
+                "laravel projects"
+            ],
+            "responses": [
+                "laravel"
+            ]
+        },
+        {
+            "tag": "react",
+            "patterns": [
+                "react",
+                "react webdev",
+                "react library",
+                "react projects"
+            ],
+            "responses": [
+                "react"
+            ]
+        },
+        {
+            "tag": "angular",
+            "patterns": [
+                "angular",
+                "angular webdev",
+                "angular library",
+                "angular projects"
+            ],
+            "responses": [
+                "angular"
+            ]
+        },
+        {
+            "tag": "vue",
+            "patterns": [
+                "vue",
+                "vue webdev",
+                "vue library",
+                "vue projects"
+            ],
+            "responses": [
+                "vue"
+            ]
+        },
+        {
+            "tag": "node",
+            "patterns": [
+                "node",
+                "node webdev",
+                "node library",
+                "node projects"
+            ],
+            "responses": [
+                "node"
+            ]
+        },
+        {
+            "tag": "express",
+            "patterns": [
+                "express",
+                "express webdev",
+                "express library",
+                "express projects"
+            ],
+            "responses": [
+                "express"
+            ]
+        },
+        {
+            "tag": "google",
+            "patterns": [
+                "google company",
+                "google jobs",
+                "google trends",
+                "google"
+            ],
+            "responses": [
+                "google"
+            ]
+        },
+        {
+            "tag": "facebook",
+            "patterns": [
+                "facebook company",
+                "facebook jobs",
+                "facebook trends",
+                "facebook"
+            ],
+            "responses": [
+                "facebook"
+            ]
+        },
+        {
+            "tag": "twitter",
+            "patterns": [
+                "twitter company",
+                "twitter jobs",
+                "twitter trends",
+                "twitter"
+            ],
+            "responses": [
+                "twitter"
+            ]
+        },
+        {
+            "tag": "instagram",
+            "patterns": [
+                "instagram company",
+                "instagram jobs",
+                "instagram trends",
+                "instagram"
+            ],
+            "responses": [
+                "instagram"
+            ]
+        },
+        {
+            "tag": "youtube",
+            "patterns": [
+                "youtube company",
+                "youtube jobs",
+                "youtube trends",
+                "youtube"
+            ],
+            "responses": [
+                "youtube"
+            ]
+        },
+        {
+            "tag": "linkedin",
+            "patterns": [
+                "linkedin company",
+                "linkedin jobs",
+                "linkedin trends",
+                "linkedin"
+            ],
+            "responses": [
+                "linkedin"
+            ]
+        },
+        {
+            "tag": "amazon",
+            "patterns": [
+                "amazon company",
+                "amazon jobs",
+                "amazon trends",
+                "amazon"
+            ],
+            "responses": [
+                "amazon"
+            ]
+        },
+        {
+            "tag": "microsoft",
+            "patterns": [
+                "microsoft company",
+                "microsoft jobs",
+                "microsoft trends",
+                "microsoft"
+            ],
+            "responses": [
+                "microsoft"
+            ]
+        },
+        {
+            "tag": "apple",
+            "patterns": [
+                "apple company",
+                "apple jobs",
+                "apple trends",
+                "apple"
+            ],
+            "responses": [
+                "apple"
+            ]
+        },
+        {
+            "tag": "stackoverflow",
+            "patterns": [
+                "stackoverflow ",
+                "stackoverflow question",
+                "stackoverflow answers",
+                "stackoverflow trends"
+            ],
+            "responses": [
+                "stackoverflow"
+            ]
+        },
+        {
+            "tag": "trello",
+            "patterns": [
+                "trello",
+                "trello projects",
+                "trello trends",
+                "trello jobs"
+            ],
+            "responses": [
+                "trello"
+            ]
+        },
+        {
+            "tag": "slack",
+            "patterns": [
+                "slack",
+                "slack projects",
+                "slack trends",
+                "slack jobs"
+            ],
+            "responses": [
+                "slack"
+            ]
+        },
+        {
+            "tag": "gmail",
+            "patterns": [
+                "gmail",
+                "gmail projects",
+                "gmail trends",
+                "gmail jobs"
+            ],
+            "responses": [
+                "gmail"
+            ]
+        },
+        {
+            "tag": "cryptocurrency",
+            "patterns": [
+                "cryptocurrency",
+                "crypto",
+                "crypto currency",
+                "cryptocurrency trends",
+                "cryptocurrency predictions"
+            ],
+            "responses": [
+                "cryptocurrency"
+            ]
+        },
+        {
+            "tag": "stock market",
+            "patterns": [
+                "stocks",
+                "investing",
+                "stock prices",
+                "stock market",
+                "stock market trends"
+            ],
+            "responses": [
+                "stock market"
+            ]
+        },
+        {
+            "tag": "tesla",
+            "patterns": [
+                "tesla",
+                "tesla jobs",
+                "tesla trends",
+                "tesla cars"
+            ],
+            "responses": [
+                "tesla"
+            ]
+        },
+        {
+            "tag": "rich people",
+            "patterns": [
+                "rich people",
+                "rich people net worth",
+                "CEOs",
+                "billionaires"
+            ],
+            "responses": [
+                "rich people"
+            ]
+        },
+        {
+            "tag": "netflix",
+            "patterns": [
+                "netflix",
+                "netflix jobs",
+                "netflix movies",
+                "netflix shows"
+            ],
+            "responses": [
+                "netflix"
+            ]
+        },
+        {
+            "tag": "amazon prime",
+            "patterns": [
+                "amazon prime",
+                "amazon prime movies",
+                "amazon prime shows",
+                "amazon prime price"
+            ],
+            "responses": [
+                "amazon prime"
+            ]
+        },
+        {
+            "tag": "hulu",
+            "patterns": [
+                "hulu",
+                "hulu price",
+                "hulu movies",
+                "hulu shows"
+            ],
+            "responses": [
+                "hulu"
+            ]
+        },
+        {
+            "tag": "spotify",
+            "patterns": [
+                "spotify",
+                "spotify jobs",
+                "spotify music",
+                "spotify podcasts"
+            ],
+            "responses": [
+                "spotify"
+            ]
+        },
+        {
+            "tag": "apple music",
+            "patterns": [
+                "apple music",
+                "apple music jobs",
+                "apple music music",
+                "apple music podcasts"
+            ],
+            "responses": [
+                "apple music"
+            ]
+        },
+        {
+            "tag": "google play",
+            "patterns": [
+                "google play",
+                "google play jobs",
+                "google play music",
+                "google play podcasts"
+            ],
+            "responses": [
+                "google play"
+            ]
+        },
+        {
+            "tag": "youtube music",
+            "patterns": [
+                "youtube music",
+                "youtube music jobs",
+                "youtube music music",
+                "youtube music podcasts"
+            ],
+            "responses": [
+                "youtube music"
+            ]
+        },
+        {
+            "tag": "apple tv",
+            "patterns": [
+                "apple tv",
+                "apple tv price",
+                "apple tv movies",
+                "apple tv shows"
+            ],
+            "responses": [
+                "apple tv"
+            ]
+        },
+        {
+            "tag": "travel",
+            "patterns": [
+                "travel",
+                "vacations",
+                "vacation countries",
+                "vacation destinations"
+            ],
+            "responses": [
+                "travel"
+            ]
+        },
+        {
+            "tag": "airbnb",
+            "patterns": [
+                "airbnb",
+                "airbnb jobs",
+                "airbnb price",
+                "airbnb rooms"
+            ],
+            "responses": [
+                "airbnb"
+            ]
+        },
+        {
+            "tag": "uber",
+            "patterns": [
+                "uber",
+                "uber jobs",
+                "uber price",
+                "uber cars"
+            ],
+            "responses": [
+                "uber"
+            ]
+        },
+        {
+            "tag": "lyft",
+            "patterns": [
+                "lyft",
+                "lyft jobs",
+                "lyft price",
+                "lyft cars"
+            ],
+            "responses": [
+                "lyft"
+            ]
+        }
+    ]
+}
