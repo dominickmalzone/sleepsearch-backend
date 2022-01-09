@@ -5,6 +5,14 @@ Introducing sleep search, a web app that return any question you search, especia
 
 ## What it does
 
+## How it works 
+this app contain 5 layers of NLP machine learning, NLP deep learning, and a web scrape api.
+1. first we have naive bayes model that determine where should our question passed to
+2. second we have a naive bayes model again, to understand nlp input from user, and search our database for the answer. **_btw our database can contain up to 1,000,000 data_**. We use google cloud to host the mongodb
+3. third, we have deep learning gpt3 model trained in thousand of data, to answer the question if the naive bayes model not quite sure of the answer.
+4. fourth, we have wikipedia api and google web scrape api for the backup plan if all our trained model not quite sure of the answer.
+5. and last, we have wolfram api for the backup plan if the question cant be answered on previous layers.
+
 ## How we built it
 
 ## Challenges we ran into
