@@ -25,9 +25,12 @@ First, Arnav, Evan, and Dominick working on the front end to make some nice and 
 - integrating frontend to backend (solved)
 
 ## Accomplishments that we're proud of
+make this app only in 36 hours 
 
 ## What we learned
-
+- work as a team
+- learning new framework like mongodb
+- learning new library like sklearn, pickle, and pymongo
 ## What's next for Sleep Search
 - We will train our model periodically so the model will always up to date
 - We will add more answers on our database
