@@ -6,6 +6,13 @@ import requests
 from bs4 import BeautifulSoup
 import wikipedia
 import pymongo
+
+from library import query
+
+# make the mongo model so it contain (class and response)
+# minecraft ; Minecraft is a video game in which players create and break apart various kinds of blocks in three-dimensional worlds.
+# {"minecraft" : ""}
+
 client = pymongo.MongoClient("mongodb+srv://evans:Bellwood30@cluster0.luckw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 app = Flask(__name__)
 api = Api(app)
@@ -29,27 +36,22 @@ search_put_args.add_argument('data', type=str, help="insert search data here", r
 
 
 
-def query(user_query):
-    URL = "https://www.google.co.in/search?q=" + user_query
+# def query(user_query):
+#     URL = "https://www.google.co.in/search?q=" + user_query
 
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36 Edg/89.0.774.57'
-    }
-    page = requests.get(URL, headers=headers)
-    soup = BeautifulSoup(page.content, 'html.parser')
-    if soup.find(class_='Z0LcW') != None:
-        result = soup.find(class_='Z0LcW').get_text()
-    elif soup.find(class_='thODed') != None:
-        result = soup.find(class_='thODed').get_text()
-    else:
-        result = "sorry no result found"
-    result = result.encode('ascii', 'ignore').decode('ascii')
-    return result
-
-
-
-def search_engine(search_data : str) : 
-    pass
+#     headers = {
+#         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36 Edg/89.0.774.57'
+#     }
+#     page = requests.get(URL, headers=headers)
+#     soup = BeautifulSoup(page.content, 'html.parser')
+#     if soup.find(class_='Z0LcW') != None:
+#         result = soup.find(class_='Z0LcW').get_text()
+#     elif soup.find(class_='thODed') != None:
+#         result = soup.find(class_='thODed').get_text()
+#     else:
+#         result = "sorry no result found"
+#     result = result.encode('ascii', 'ignore').decode('ascii')
+#     return result
 
 
 class Search(Resource) : 
