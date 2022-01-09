@@ -27,9 +27,10 @@ classnames = ['adobe creative cloud', 'adobe xd', 'airbnb', 'amazon',
 
 
 ## CHANGE THIS FOR EVERY CLASS ##
+# start from spotify
 new_document = {
-    'tag' : "parasomnia",
-    'response' : "A parasomnia is a sleep disorder that involves unusual and undesirable physical events or experiences that disrupt your sleep. A parasomnia can occur before or during sleep or during arousal from sleep. If you have a parasomnia, you might have abnormal movements, talk, express emotions or do unusual things."
+    'tag' : "",
+    'response' : ""
 }
 try :
     queries.insert_one(new_document)
