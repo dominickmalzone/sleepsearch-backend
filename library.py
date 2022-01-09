@@ -41,11 +41,15 @@ def database_query_label(sentence) : # general purpose
     result = "0" # its returning 0 bcs the database cannot found the specified query
   else :
     label = classnames[predict[0]]
-    try :
-      result = queries.find_one({'tag' : str(label) })["response"]
-      result = "(naive bayes) " + str(result)
-    except : 
+
+    if str(label) == "insomnia" or str(label) == "sleep apnea" or str(label) == "sleeping":
       result = "0"
+    else :
+      try :
+        result = queries.find_one({'tag' : str(label) })["response"]
+        result = str(result) + " (naive bayes)"
+      except : 
+        result = "0"
   return result
 
 # print(database_query_label("kidney cancr ")) # the database still can handle typo
@@ -73,7 +77,7 @@ def gpt_three_query(sentence) :
   if response == "Unknown" :
     response = "0"
   else :
-    response = "(gpt3) " + str(response)
+    response = str(response) + " (gpt3)"
   return response
 
 def wolfram_query(sentence) : 
@@ -90,7 +94,7 @@ def wolfram_query(sentence) :
   if response == "Wolfram|Alpha did not understand your input" :
     response = "sorry didnt understand ur input"
   else :
-    response = "(wolfram) " + response
+    response = response + " (wolfram)"
   return response 
 
 # print(wolfram_query("what long is normal ruler"))
@@ -120,7 +124,7 @@ def query(sentence):
       if wikipedia_response == "0" :
         result = wolfram_query(sentence)
       else :
-        result = "(wikipedia) " + str(wikipedia_response)
+        result = str(wikipedia_response) + " (wikipedia)" 
     else :
       result = gpt_response
   else : 
