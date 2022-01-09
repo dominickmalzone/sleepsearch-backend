@@ -28,8 +28,8 @@ classnames = ['adobe creative cloud', 'adobe xd', 'airbnb', 'amazon',
 
 ## CHANGE THIS FOR EVERY CLASS ##
 new_document = {
-    'tag' : "mouse",
-    'response' : "A mouse, plural mice, is a small mammal. Characteristically, mice are known to have a pointed snout, small rounded ears, a body-length scaly tail, and a high breeding rate. The best known mouse species is the common house mouse. Mice are also popular as pets."
+    'tag' : "parasomnia",
+    'response' : "A parasomnia is a sleep disorder that involves unusual and undesirable physical events or experiences that disrupt your sleep. A parasomnia can occur before or during sleep or during arousal from sleep. If you have a parasomnia, you might have abnormal movements, talk, express emotions or do unusual things."
 }
 try :
     queries.insert_one(new_document)
