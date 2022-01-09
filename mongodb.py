@@ -29,8 +29,8 @@ classnames = ['adobe creative cloud', 'adobe xd', 'airbnb', 'amazon',
 ## CHANGE THIS FOR EVERY CLASS ##
 # start from the airbnb
 new_document = { 
-    'tag' : "amazon",
-    'response' : "Amazon.com, Inc. is an American multinational technology company which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence."
+    'tag' : "amazon prime",
+    'response' : "Amazon Prime is a paid subscription program from Amazon which is available in various countries and gives users access to additional services otherwise unavailable or available at a premium to other Amazon customers. Services include same, one or two-day delivery of goods and streaming music, video, e-books, gaming and grocery shopping services."
 } # dont forget to save it first before commit
 try :
     queries.insert_one(new_document)
