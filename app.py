@@ -60,6 +60,7 @@ class Search(Resource) :
         result = query(search_data)
         print(result)
         json_result = jsonify({"result" : result})
+        json_result.headers.add('Access-Control-Allow-Origin', '*')
         return json_result
         # return "result : " + result
     
@@ -69,7 +70,9 @@ class Search(Resource) :
         print(search_data)
         result = query(search_data)
         print(result)
-        return "result : " +result
+        json_result = jsonify({"result" : result})
+        json_result.headers.add('Access-Control-Allow-Origin', '*')
+        return json_result
 
 @app.route('/')
 def index():

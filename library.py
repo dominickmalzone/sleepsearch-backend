@@ -41,13 +41,40 @@ def database_query_label(sentence) : # general purpose
     result = "0" # its returning 0 bcs the database cannot found the specified query
   else :
     label = classnames[predict[0]]
-    result = queries.find_one({'tag' : str(label) })["response"]
-
+    try :
+      result = queries.find_one({'tag' : str(label) })["response"]
+      result = "(naive bayes) " + str(result)
+    except : 
+      result = "0"
   return result
 
 # print(database_query_label("kidney cancr ")) # the database still can handle typo
 # print(database_query_label("stmch cancer "))
 # print(database_query_label("what is python"))
+import openai
+def gpt_three_query(sentence) : 
+  # train data 
+  train = f"I am a highly intelligent question answering bot. If you ask me a question that is rooted in truth, I will give you the answer. If you ask me a question that is nonsense, trickery, or has no clear answer, I will respond with \"Unknown\".\n\nQ: What is human life expectancy in the United States?\nA: Human life expectancy in the United States is 78 years.\n\nQ: Who was president of the United States in 1955?\nA: Dwight D. Eisenhower was president of the United States in 1955.\n\nQ: Which party did he belong to?\nA: He belonged to the Republican Party.\n\nQ: What is the square root of banana?\nA: Unknown\n\nQ: How does a telescope work?\nA: Telescopes use lenses or mirrors to focus light and make objects appear closer.\n\nQ: Where were the 1992 Olympics held?\nA: The 1992 Olympics were held in Barcelona, Spain.\n\nQ: How many squigs are in a bonk?\nA: Unknown\n\nQ:{sentence}?\n"
+  openai.api_key = "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"
+  response = openai.Completion.create(
+  engine="davinci",
+  prompt= train,
+  temperature=0,
+  max_tokens=100,
+  top_p=1,
+  frequency_penalty=0,
+  presence_penalty=0,
+  stop=["\n"]
+  ).choices[0].text
+  response = response.split()
+  response.pop(0)
+  response = " ".join(response)
+
+  if response == "Unknown" :
+    response = "0"
+  else :
+    response = "(gpt3) " + str(response)
+  return response
 
 def wolfram_query(sentence) : 
   wolfram_id ="WEXTEU-4LRRU6G988"
@@ -58,7 +85,12 @@ def wolfram_query(sentence) :
     'i': sentence,}
 
   r = rq.get(wolfram_url, params=params)
-  response = r.text
+  response =  r.text
+  
+  if response == "Wolfram|Alpha did not understand your input" :
+    response = "sorry didnt understand ur input"
+  else :
+    response = "(wolfram) " + response
   return response 
 
 # print(wolfram_query("what long is normal ruler"))
@@ -80,11 +112,17 @@ def wikipedia_query(sentence) :
 def query(sentence): 
   query_label =  database_query_label(sentence)
   wikipedia_response = wikipedia_query(sentence)
+  gpt_response = gpt_three_query(sentence)
+
   if query_label == "0" : 
-    if wikipedia_response == "0" :
-      result = wolfram_query(sentence)
+
+    if gpt_response == "0" :
+      if wikipedia_response == "0" :
+        result = wolfram_query(sentence)
+      else :
+        result = "(wikipedia) " + str(wikipedia_response)
     else :
-      result = wikipedia_response
+      result = gpt_response
   else : 
     # at here we add the mongodb integration
     # that seek our database for answers
@@ -98,4 +136,5 @@ def query(sentence):
 # try it right here
 # print("~~~")
 # print(query("what is insomnia"))
+# print(gpt_three_query("How long is a ruler"))
 
