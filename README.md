@@ -13,6 +13,8 @@ this app contain 5 layers of NLP machine learning, NLP deep learning, and a web 
 4. fourth, we have wikipedia api and google web scrape api for the backup plan if all our trained model not quite sure of the answer.
 5. and last, we have wolfram api for the backup plan if the question cant be answered on previous layers.
 
+but 90% of the question can be answerred by our model 1st until 3rd layer, so the 4th and 5th model is just for a backup plan if our model still not trained on that data
+
 ## How we built it
 
 ## Challenges we ran into
