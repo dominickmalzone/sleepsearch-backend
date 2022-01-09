@@ -3,6 +3,17 @@
     <head>
     </head>
     <body>
-        Test
+        <div class="container">
+            <form>
+                <input type="text" name="data" placeholder="How do I achieve this?">
+                <button onclick="sendData()">Send</button>
+            </form>
+        </div>
+        <script>
+            function sendData(){
+                let data = document.querySelector('input[name="data"]').value;
+                window.location.href = "/search?data=" + data;
+            }
+        </script>
     </body>
 </html>

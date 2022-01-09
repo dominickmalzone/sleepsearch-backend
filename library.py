@@ -1,6 +1,12 @@
 import pickle
-import sklearn
 import requests as rq
+import pymongo
+
+client = pymongo.MongoClient("mongodb+srv://sleepsearch:sleepsearch123@sleepsearchcluster.akq03.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+db = client.get_database("queryanswers")
+queries = db.query
+
+# print(queries.find_one({'tag' : 'insomnia'})["response"]) # THIS ONE
 
 def database_query_label(sentence) : # general purpose
 
@@ -34,7 +40,8 @@ def database_query_label(sentence) : # general purpose
   if predict == [77] and probability < 0.27 : 
     result = "0" # its returning 0 bcs the database cannot found the specified query
   else :
-    result = classnames[predict[0]]
+    label = classnames[predict[0]]
+    result = queries.find_one({'tag' : str(label) })["response"]
 
   return result
 
@@ -89,6 +96,6 @@ def query(sentence):
 # query("what is stomach cancer")
 
 # try it right here
-print("~~~")
-print(query("AAPL stock price today"))
+# print("~~~")
+# print(query("what is insomnia"))
 

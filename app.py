@@ -3,7 +3,7 @@ from flask_restful import Api, Resource, reqparse
 from flask import jsonify
 from flask_mongoengine import MongoEngine
 import requests
-from bs4 import BeautifulSoup
+# from bs4 import BeautifulSoup
 import wikipedia
 import pymongo
 
@@ -13,16 +13,14 @@ from library import query
 # minecraft ; Minecraft is a video game in which players create and break apart various kinds of blocks in three-dimensional worlds.
 # {"minecraft" : ""}
 
-client = pymongo.MongoClient("mongodb+srv://evans:Bellwood30@cluster0.luckw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://sleepsearch:sleepsearch123@sleepsearchcluster.akq03.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 app = Flask(__name__)
 api = Api(app)
-app.config['MONGODB_SETTINGS'] = {
-    'db': 'sleepSearch',
-    'host': 'localhost',
-    'port': 27017
-}
-db = MongoEngine()
-db.init_app(app)
+# app.config['MONGODB_SETTINGS'] = {
+#     'db': 'sleepSearch',
+#     'host': 'localhost',
+#     'port': 27017
+# }
 
 search_put_args = reqparse.RequestParser()
 search_put_args.add_argument('data', type=str, help="insert search data here", required = True)
