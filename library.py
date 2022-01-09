@@ -1,8 +1,9 @@
 import pickle
 import requests as rq
 import pymongo
+import os
 
-client = pymongo.MongoClient("mongodb+srv://sleepsearch:sleepsearch123@sleepsearchcluster.akq03.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = pymongo.MongoClient(os.getenv("mongodb_uri"))
 db = client.get_database("queryanswers")
 queries = db.query
 
@@ -59,7 +60,7 @@ import openai
 def gpt_three_query(sentence) : 
   # train data 
   train = f"The following is a question answering bot. You can ask it a question about sleep disorders like insomnia or sleep apnea, and it will give you a medically accurate response.\n\nQ: What is the best cpap machine for sleep apnea?\nA: Based on thousands of public user reviews, Resmed Airsense 10 AutoSet is the best for new users. Users appreciate that it's lightweight, has a built-in humidifier, and is easy to use with the companion mobile app. There is a shortage of supplies right now though, due to an increase of demand from a major recall from Philips. So you may find yourself paying extra or searching sites like Secondwindcpap.com for gently used products.\n\n\nQ: How do i treat insomnia due to anxiety\nA: According to the top reddit submissions, there are four top treatments. Practice guided medication, exercise daily, avoid screens late at night, and drinking lemon tea with chamomile before bed. Everyone responds differently so it's recommended you try all of them and be patient while finding what works best!\n\nQ:{sentence}?\n"
-  openai.api_key = "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"
+  openai.api_key = os.getenv("openai_api_key")
   response = openai.Completion.create(
   engine="davinci",
   prompt= train,

@@ -1,11 +1,9 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, jsonify
 from flask_restful import Api, Resource, reqparse
 from flask import jsonify
-from flask_mongoengine import MongoEngine
-import requests
+
 # from bs4 import BeautifulSoup
-import wikipedia
-import pymongo
+
 
 from library import query
 
@@ -13,7 +11,6 @@ from library import query
 # minecraft ; Minecraft is a video game in which players create and break apart various kinds of blocks in three-dimensional worlds.
 # {"minecraft" : ""}
 
-client = pymongo.MongoClient("mongodb+srv://sleepsearch:sleepsearch123@sleepsearchcluster.akq03.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 app = Flask(__name__)
 api = Api(app)
 # app.config['MONGODB_SETTINGS'] = {
